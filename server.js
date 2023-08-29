@@ -10,7 +10,19 @@ app.use(express.urlencoded({ extended: false }))
 
 // SEQUELIZE CONNECTION
 // Place anywhere above where the database
-const sequelize = new Sequelize(process.env.PG_URI)
+const sequelize = new Sequelize({
+    storage: process.env.PG_URI,
+    dialect: 'postgres',
+    username: 'postgres',
+    password: 'When?618'
+});
+
+try {
+    sequelize.authenticate();
+    console.log(`Connectamundo - connected to postgres on ${process.env.PG_URI}`)
+} catch (e) {
+    console.log('No dice - could not connect -bad')
+}
 
 // ROOT
 app.get('/', (req, res) => {
