@@ -19,7 +19,7 @@ const sequelize = new Sequelize({
 
 try {
     sequelize.authenticate();
-    console.log(`Connectamundo - connected to postgres on ${process.env.PG_URI}`)
+    console.log(`Connectamundo - connected to postgres on ${progress.env.PG_URI}`)
 } catch (e) {
     console.log('No dice - could not connect -bad')
 }

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "When?618",
+    "database": "music_tour",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "",
+    "database": "music_tour",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "",
+    "database": "music_tour",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
