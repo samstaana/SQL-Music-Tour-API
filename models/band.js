@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         autoIncrement: true
     }, 
-    band_name: {
+    name: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DATE,
         allowNull: false
     },
-    available_end_time: {
+    end_time: {
         type: DataTypes.DATE,
         allowNull: false
     }
